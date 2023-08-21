@@ -25,6 +25,12 @@ public:
         m_queue_mutex = new std::mutex;
     }
     ~FineGradientQueue() {
+        Node* node = m_head;
+        while (node) {
+            Node* del = node; 
+            node = del->s_next;
+            delete del;
+        }
         delete m_queue_mutex;
     }
 
