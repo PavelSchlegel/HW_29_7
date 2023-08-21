@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.18)
-project(temp LANGUAGES CXX C)
+project(HW_29_7 LANGUAGES CXX C)
 
-add_executable(temp main.cpp calculate.cpp)
-set_target_properties(temp
+add_executable(HW_29_7 main.cpp ./list/list.cpp)
+set_target_properties(HW_29_7
     PROPERTIES
-        CXX_STANDARD 14
+        CXX_STANDARD 17
         CXX_STANDARD_REQUIRED YES
         CXX_EXTENSIONS YES
         C_STANDARD 11
